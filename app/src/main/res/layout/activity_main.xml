@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/eTN1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginRight="87dp"
+        android:ems="10"
+        android:hint="Ingrese el primer operador"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/eTN2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginRight="87dp"
+        android:ems="10"
+        android:hint="Ingrese el segundo operador"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTN1" />
+
+    <TextView
+        android:id="@+id/tVRespuesta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#153955"
+        android:text="0"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginRight="87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rBSuma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUMA" />
+
+        <RadioButton
+            android:id="@+id/rBResta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESTA" />
+
+        <RadioButton
+            android:id="@+id/rBMultiplicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MULTIPLICACIÓN" />
+
+        <RadioButton
+            android:id="@+id/rBDivision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DIVISIÓN" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        style="@android:style/Widget.Material.Button.Borderless.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginLeft="158dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginRight="159dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/colorPrimaryDark"
+        android:ellipsize="none"
+        android:text="Calcular"
+        android:textColor="@android:color/white"
+        app:flow_firstHorizontalStyle="spread_inside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
