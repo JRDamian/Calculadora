@@ -88,4 +88,13 @@ public class MainActivity extends AppCompatActivity {
            }
        });
     }
+    @Override
+    protected void onStop(){
+        nro1.setText("");
+        nro2.setText("");
+        tVRespuesta.setText("");
+        super.onStop();
+        nro1.requestFocus();
+    }
+
 }

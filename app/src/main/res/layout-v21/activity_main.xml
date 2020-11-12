@@ -16,9 +16,8 @@
         android:layout_marginTop="90dp"
         android:layout_marginEnd="87dp"
         android:layout_marginRight="87dp"
-        android:autofillHints=""
         android:ems="10"
-        android:hint="@string/op1"
+        android:hint="@string/operador1"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,9 +32,8 @@
         android:layout_marginTop="73dp"
         android:layout_marginEnd="87dp"
         android:layout_marginRight="87dp"
-        android:autofillHints=""
         android:ems="10"
-        android:hint="@string/op2"
+        android:hint="Ingrese el segundo operador"
         android:inputType="number|numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,7 +45,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:background="#153955"
-        android:text="@string/_0"
+        android:text="0"
         android:textColor="@android:color/white"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -85,13 +83,13 @@
             android:id="@+id/rBMultiplicacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/multiplicacion" />
+            android:text="MULTIPLICACIÓN" />
 
         <RadioButton
             android:id="@+id/rBDivision"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/division" />
+            android:text="DIVISIÓN" />
     </RadioGroup>
 
     <Button
@@ -100,9 +98,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
-        android:layout_marginLeft="158dp"
         android:layout_marginEnd="159dp"
-        android:layout_marginRight="159dp"
         android:layout_marginBottom="100dp"
         android:background="@color/colorPrimaryDark"
         android:ellipsize="none"
@@ -111,7 +107,6 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:targetApi="lollipop" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

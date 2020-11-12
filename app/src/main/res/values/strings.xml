@@ -2,6 +2,11 @@
     <string name="app_name">Calculadora</string>
     <string name="suma">SUMA</string>
     <string name="resta">RESTA</string>
-    <string name="multiplicaci_n">MULTIPLICACIÓN</string>
-    <string name="divisi_n">DIVISIÓN</string>
+    <string name="multiplicacion">MULTIPLICACIÓN</string>
+    <string name="division">DIVISIÓN</string>
+    <string name="op1">Ingrese el primer operador</string>
+    <string name="op2">Ingrese el segundo operador</string>
+    <string name="_0">0</string>
+    <string name="calcular">Calcular</string>
+
 </resources>
